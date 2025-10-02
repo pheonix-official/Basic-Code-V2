@@ -71,11 +71,3 @@ The tool uses `aiohttp` for asynchronous HTTP requests, making it efficient when
 - Requires proper permissions for accessing local files
 - May be blocked by some websites' robot policies
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-```
