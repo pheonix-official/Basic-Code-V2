@@ -1,4 +1,27 @@
 #!/usr/bin/env python3
+"""
+Monitor and log a process's memory usage over time.
+
+Dependencies:
+    pip install psutil
+
+Usage Examples:
+    # Monitor process with PID 1234, log every 2 seconds to mem.csv
+    python memory_logger.py --pid 1234
+
+    # Monitor with a custom interval of 1 second and output file memory_log.csv
+    python memory_logger.py --pid 1234 --interval 1 --out memory_log.csv
+
+    # Show live memory usage in the terminal while logging
+    python memory_logger.py --pid 1234 --live
+
+CLI Arguments:
+    --pid       : Process ID to monitor (required)
+    --interval  : Interval in seconds between samples (default: 2)
+    --out       : Output CSV file name (default: mem.csv)
+    --live      : Show live memory usage in terminal
+"""
+
 import argparse
 import csv
 import time
