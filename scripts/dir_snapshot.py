@@ -1,4 +1,20 @@
 #!/usr/bin/env python3
+"""
+Take periodic snapshots of a directory and log changes to a file.
+
+Usage Examples:
+    # Monitor /my/folder every 60 seconds and log changes to snapshot_log.json
+    python dir_snapshot.py --path /my/folder
+
+    # Monitor /home/user/docs every 30 seconds and log to custom file
+    python dir_snapshot.py --path /home/user/docs --interval 30 --out my_snapshots.json
+
+CLI Arguments:
+    --path     : Directory to monitor (required)
+    --interval : Interval in seconds between snapshots (default: 60)
+    --out      : Output log file (default: snapshot_log.json)
+"""
+
 import argparse
 import os
 import time
